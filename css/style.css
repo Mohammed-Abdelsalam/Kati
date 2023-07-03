@@ -262,9 +262,6 @@ h2.head .index .font-we {
 }
 
 @media (max-width: 576px) {
-    .price .card-plan .card {
-        width: 100% !important;
-    }
     .servies .servie-box {
         width: 100% !important;
         margin: 30px 10px !important;
@@ -291,14 +288,23 @@ h2.head .index .font-we {
     .head-section {
         text-align: center;
     }
-    .contact-us .information p,
+    .contact-us .information > p,
     .contact-us .information h3 {
         text-align: center;
     }
     .gallery .portfolio-list .portfolio {
         width: 100% !important;
     }
+    h2.head,
+    .about-details p {
+        text-align: center;
+    }
+    .about .btn {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 
 @media (max-width: 726px) {
     .about .counter .row > div {
@@ -310,8 +316,29 @@ h2.head .index .font-we {
         margin: 15px !important;
     }
     
+    .price .card-plan .card {
+        width: 100% !important;
+    }
+    
     .gallery .portfolio-list .portfolio {
         width: 100% !important;
+    }
+
+    .about .about-first .about-details {
+        width: 100% !important;
+    }
+    .about .about-first .about-details {
+        width: 100% !important;
+    }
+    .about .about-first .about-details h2,
+    .about .about-first .about-details p {
+        text-align: center;
+    }
+
+    .about .about-first .ab-about-list {
+        width: 100% !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
@@ -745,7 +772,6 @@ h2.head .index .font-we {
 /* End About Content */
 /* ============ End About Styleing ================= */
 
-/* ============== Start Section projects Styling ============= */
 .projects {
     background: url('../images/bigimage/primg.jpg') no-repeat fixed 150% 10%;
     background-size: 75% 100%;
@@ -774,25 +800,24 @@ h2.head .index .font-we {
     margin-bottom: 30px;
 }
 
-
-.projects .projects-content .head-section .head{
+.projects .projects-content .head-section .head {
     color: #fff;
 }
 
-.projects .projects-content .head-section p{
-    margin: 15px 0 ;
+.projects .projects-content .head-section p {
+    margin: 15px 0;
     color: #fff;
 }
 
-.projects .projects-content .tabs-name  {
-    margin: 15px  0 30px;
+.projects .projects-content .tabs-name {
+    margin: 15px 0 30px;
 }
 
 .projects .projects-content .tabs li {
     padding: 12px 25px;
     background-color: #212121;
     margin-right: 30px;
-    font-size: .9rem;
+    font-size: 0.9rem;
     cursor: pointer;
 }
 
@@ -819,9 +844,22 @@ h2.head .index .font-we {
     font-size: 1.1rem;
 }
 
+/* Media Queries */
 
+@media (max-width: 768px) {
+    .projects::before {
+        width: 100%;
+    }
 
-/* ============== End Section projects Styling ============= */
+    .projects .projects-content {
+        width: 100%;
+    }
+
+    .projects .projects-content .tabs .tab > div {
+        width: 100%;
+    }
+}
+
 
 /* ============== Start Section Gallery Styling =============== */
 .gallery ul {
