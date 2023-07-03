@@ -261,6 +261,60 @@ h2.head .index .font-we {
     }
 }
 
+@media (max-width: 576px) {
+    .price .card-plan .card {
+        width: 100% !important;
+    }
+    .servies .servie-box {
+        width: 100% !important;
+        margin: 30px 10px !important;
+    }
+    .team .team-box {
+        width: 100% !important;
+    }
+    .testimonials .sponsors ul {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .testimonials .sponsors ul li {
+        width: 60% !important;
+        padding: 20px;
+    }
+    .contact-us .contact {
+        width: 100% !important;
+    }
+    .contact-us .information {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+    .head-section {
+        text-align: center;
+    }
+    .contact-us .information p,
+    .contact-us .information h3 {
+        text-align: center;
+    }
+    .gallery .portfolio-list .portfolio {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 726px) {
+    .about .counter .row > div {
+        width: 100% !important;
+        margin: 15px !important;
+    }
+    .about .about-content .row > div {
+        width: 100% !important;
+        margin: 15px !important;
+    }
+    
+    .gallery .portfolio-list .portfolio {
+        width: 100% !important;
+    }
+}
+
 @media (min-width: 992px) {
     .d-md-none {
         display: none;
